@@ -30,6 +30,7 @@ public class UserAccountService {
         return userAccountsRepository.findAll();
     }
 
+
     public Optional<UserAccounts> getUserAccountById(Long userAccountId) {
         boolean exist = userAccountsRepository.existsById(userAccountId);
         if (!exist) {
