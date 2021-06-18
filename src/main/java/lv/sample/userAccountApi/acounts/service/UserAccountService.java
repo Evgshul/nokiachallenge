@@ -1,7 +1,7 @@
-package lv.inteview.nokiachallenge.acounts.service;
+package lv.sample.userAccountApi.acounts.service;
 
-import lv.inteview.nokiachallenge.acounts.model.UserAccounts;
-import lv.inteview.nokiachallenge.acounts.repository.UserAccountsRepository;
+import lv.sample.userAccountApi.acounts.model.UserAccounts;
+import lv.sample.userAccountApi.acounts.repository.UserAccountsRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -21,7 +21,6 @@ public class UserAccountService {
         this.userAccountsRepository = userAccountsRepository;
     }
 
-    @Valid
     public void addNewUserAccount(UserAccounts userAccounts) {
         userAccountsRepository.saveAndFlush(userAccounts);
     }

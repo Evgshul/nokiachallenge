@@ -1,4 +1,4 @@
-package lv.inteview.nokiachallenge.acounts.exception;
+package lv.sample.userAccountApi.acounts.exception;
 
 import org.springframework.context.support.DefaultMessageSourceResolvable;
 import org.springframework.http.HttpHeaders;

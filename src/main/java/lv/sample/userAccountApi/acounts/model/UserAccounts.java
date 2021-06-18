@@ -1,4 +1,4 @@
-package lv.inteview.nokiachallenge.acounts.model;
+package lv.sample.userAccountApi.acounts.model;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
@@ -38,6 +38,14 @@ public class UserAccounts {
     public UserAccounts() {
     }
 
+    public UserAccounts(String name, String phone, String email, String address, String country, String department) {
+        this.name = name;
+        this.phone = phone;
+        this.email = email;
+        this.address = address;
+        this.country = country;
+        this.department = department;
+    }
 
     public Long getId() {
         return id;

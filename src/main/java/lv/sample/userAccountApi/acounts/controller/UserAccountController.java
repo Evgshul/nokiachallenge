@@ -1,7 +1,7 @@
-package lv.inteview.nokiachallenge.acounts.controller;
+package lv.sample.userAccountApi.acounts.controller;
 
-import lv.inteview.nokiachallenge.acounts.model.UserAccounts;
-import lv.inteview.nokiachallenge.acounts.service.UserAccountService;
+import lv.sample.userAccountApi.acounts.model.UserAccounts;
+import lv.sample.userAccountApi.acounts.service.UserAccountService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

@@ -1,4 +1,4 @@
-package lv.inteview.nokiachallenge.acounts.exception;
+package lv.sample.userAccountApi.acounts.exception;
 
 import java.util.Date;
 
