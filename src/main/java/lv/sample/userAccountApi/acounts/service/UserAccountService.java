@@ -6,7 +6,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
-import javax.validation.Valid;
 import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
@@ -55,9 +54,11 @@ public class UserAccountService {
 
         UserAccounts existAccount = userAccountsRepository.findById(id)
                 .orElseThrow(() -> new IllegalStateException(
-                        "User Account " + id + "does not exist"
+                        "User Account with ID: " + id + " does not exist"
                 ));
-        existAccount.setId(id);
+
+        existAccount.setId(userAccount.getId());
+
         if (userAccount.getName() != null && userAccount.getName().length() > 0 &&
                 !Objects.equals(existAccount.getName(), userAccount.getName())) {
             existAccount.setName(userAccount.getName());

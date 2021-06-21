@@ -54,6 +54,10 @@
             <artifactId>robotframework</artifactId>
             <version>4.0.1</version>
         </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+        </dependency>
 
     </dependencies>
 
